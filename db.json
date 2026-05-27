@@ -1,7 +1,7 @@
 {
     "Dashboard":{
         "aktywneRewizje": 3,
-        "paczkiwMagazynie": 42,
+        "towar": 3,
         "powiadomienieOMandacie": true
     },
     "Rewizje":[
@@ -28,6 +28,6 @@
         "nazwa agencji": "Customs and Clereance Sp. z o.o.",
         "EORI": "PL12345678900000",
         "numer licencji": "AG-9988-PL",
-        "kontakt oddzialu": "Oddzial celny I w Warszawie, tel: =48 22 123 45 67"
+        "kontakt oddzialu": "Oddzial celny I w Warszawie, tel: +48 22 123 45 67"
     }    
 }

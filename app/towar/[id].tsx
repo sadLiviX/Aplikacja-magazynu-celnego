@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function SzczegolyTowaruScreen() {
   // useLocalSearchParams wyciąga "id" z adresu URL aplikacji
@@ -8,7 +8,7 @@ export default function SzczegolyTowaruScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Szczegóły towaru</Text>
-      <Text style={styles.info}>ID szukanej paczki to: {id}</Text>
+      <Text style={styles.info}>ID szukanego numeru AWB to: {id}</Text>
     </View>
   );
 }
