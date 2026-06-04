@@ -7,7 +7,7 @@
     "Rewizje":[
         {"id": "1", "status": "zakonczona", "data": "2026-05-24", "mrn": "PL4430200001R0", "opis": "Rewizja dokumentow"},
         {"id": "2", "status": "w trakcie", "data": "2026-05-25", "mrn": "PL4430200002R0", "opis": "Rewizja ze zdjeciami"},
-        {"id": "3", "status": "umowiona", "data": "2026-05-25", "mrn":"PL4430200003R0", "opis": "Rewizja dokumnetww"}
+        {"id": "3", "status": "umowiona", "data": "2026-05-25", "mrn":"PL4430200003R0", "opis": "Rewizja dokumentów"}
     ],
     "Platnosci":[
         {"id": "1", "tytul": "Mandat za wyjecie paczki spod dozoru celnego", "naleznosc": "300.00", "status": "oplacona"},

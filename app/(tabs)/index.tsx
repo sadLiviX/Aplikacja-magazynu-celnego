@@ -1,5 +1,6 @@
+import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { API_URL } from '../../constants/Config';
 
 export default function DashboardScreen() {
@@ -47,12 +48,15 @@ export default function DashboardScreen() {
     <View style={styles.container}>
       <Text style={styles.header}>System Magazynu Celnego</Text>
     <View style={styles.Boxes}>
-        <View style={styles.boxRevisions}>
-        <Text> Aktywne rewizje: {data.aktywneRewizje}</Text>
-        </View>
+        <TouchableOpacity 
+  style={styles.boxRevisions} 
+  onPress={() => router.push('/rewizje')}
+>
+  <Text> Aktywne rewizje: {data.aktywneRewizje}</Text>
+</TouchableOpacity>
 
         <View style={styles.boxGoods}>
-        <Text> Paczki w magazynie: {data.towar}</Text>
+          <Text> Numery AWB na magazynie: {data.towar}</Text>
         </View>
     </View>
 
