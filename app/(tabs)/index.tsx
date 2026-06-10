@@ -61,10 +61,13 @@ export default function DashboardScreen() {
     </View>
 
     {data.powiadomienieOMandacie && (
-             <View style={styles.alertBox}>
-               <Text style={styles.alertText}>⚠️ UWAGA: Aktywne powiadomienie o mandacie!</Text>
-             </View>
-           )}
+  <TouchableOpacity 
+    style={[styles.alertBox, { padding: 15, borderRadius: 10, marginTop: 15 }]} 
+    onPress={() => router.push('/platnosci')}
+  >
+    <Text style={styles.alertText}>⚠️ UWAGA: Masz nieopłacone mandaty celne! Kliknij, aby opłacić.</Text>
+  </TouchableOpacity>
+)}
     
 
     </View>
