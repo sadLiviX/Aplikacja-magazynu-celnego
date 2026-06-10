@@ -64,21 +64,21 @@
   "Towary": [
     {
       "id": "PL-00001",
-      "numer AWB": "157-4501",
+      "numer_AWB": "157-4501",
       "opis": "Ubrania",
       "waga": "2500kg",
       "status": "odprawiony"
     },
     {
       "id": "PL-00002",
-      "numer AWB": "157-4502",
+      "numer_AWB": "157-4502",
       "opis": "Elektronika",
       "waga": "1500kg",
       "status": "zatrzymany do rewizji"
     },
     {
       "id": "PL-00003",
-      "numer AWB": "157-4503",
+      "numer_AWB": "157-4503",
       "opis": "Artykuły dowmowe",
       "waga": "300kg",
       "status": "w trakcie skanowania"

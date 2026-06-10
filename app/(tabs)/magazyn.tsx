@@ -40,7 +40,7 @@ export default function MagazynScreen() {
             style={styles.goodsCard}
             onPress={() => router.push(`/towar/${item.id}`)}
           >
-            <Text style={styles.awbText}>ID / AWB: {item.id}</Text>
+            <Text style={styles.awbText}>AWB: {item.numer_AWB}</Text>
             <Text style={styles.titleText}>{item.nazwa || item["nazwa towaru"]}</Text>
             <Text style={styles.statusText}>Status: {item.status}</Text>
           </TouchableOpacity>
