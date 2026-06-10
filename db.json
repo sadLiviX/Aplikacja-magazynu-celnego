@@ -1,33 +1,114 @@
 {
-    "Dashboard":{
-        "aktywneRewizje": 3,
-        "towar": 3,
-        "powiadomienieOMandacie": true
+  "Dashboard": {
+    "aktywneRewizje": 3,
+    "towar": 3,
+    "powiadomienieOMandacie": true
+  },
+  "Rewizje": [
+    {
+      "id": "1",
+      "status": "zakonczona",
+      "data": "2026-05-24",
+      "mrn": "PL4430200001R0",
+      "opis": "Rewizja dokumentow"
     },
-    "Rewizje":[
-        {"id": "1", "status": "zakonczona", "data": "2026-05-24", "mrn": "PL4430200001R0", "opis": "Rewizja dokumentow"},
-        {"id": "2", "status": "w trakcie", "data": "2026-05-25", "mrn": "PL4430200002R0", "opis": "Rewizja ze zdjeciami"},
-        {"id": "3", "status": "umowiona", "data": "2026-05-25", "mrn":"PL4430200003R0", "opis": "Rewizja dokumentów"}
-    ],
-    "Platnosci":[
-        {"id": "1", "tytul": "Mandat za wyjecie paczki spod dozoru celnego", "naleznosc": "300.00", "status": "oplacona"},
-        {"id": "2", "tytul": "Oplata za asyste magazyniera", "naleznosc": "70.00", "status": "nieplacona"},
-        {"id": "3", "tytul": "Mandat za blad w deklaracji celnej", "naleznosc": "500.00", "status": "nieoplacona"}
-    ],
-    "Towary":[
-        {"id": "PL-00001", "numer AWB": "157-4501", "opis": "Ubrania", "waga": "2500kg", "status": "odprawiony"},
-        {"id": "PL-00002", "numer AWB": "157-4502", "opis": "Elektronika", "waga": "1500kg", "status": "zatrzymany do rewizji"},
-        {"id": "PL-00003", "numer AWB": "157-4503", "opis": "Artykuły dowmowe", "waga": "300kg", "status": "w trakcie skanowania"}
-    ],
-    "Powiadomienia":[
-        {"id": "1", "tresc": "Przesylka PL-00001 zostala zwolniona i jest gotowa do wywozu", "data": "2026-05-24", "godzina": "15:30"},
-        {"id": "2", "tresc": "Nalozono oplate za asyste magazyniera w wysokosci 70.00", "data": "2026-05-25", "godzina": "12:00"},
-        {"id": "3", "tresc": "Nalozno mandat za bledy w deklaracji celnej", "data": "2026-05-25", "godzina": "18:42"}
-    ],
-    "Profil":{
-        "nazwa agencji": "Customs and Clereance Sp. z o.o.",
-        "EORI": "PL12345678900000",
-        "numer licencji": "AG-9988-PL",
-        "kontakt oddzialu": "Oddzial celny I w Warszawie, tel: +48 22 123 45 67"
-    }    
+    {
+      "id": "2",
+      "status": "w trakcie",
+      "data": "2026-05-25",
+      "mrn": "PL4430200002R0",
+      "opis": "Rewizja ze zdjeciami"
+    },
+    {
+      "id": "3",
+      "status": "umowiona",
+      "data": "2026-05-25",
+      "mrn": "PL4430200003R0",
+      "opis": "Rewizja dokumentów"
+    },
+    {
+      "mrn": "PL4430200002R0",
+      "status": "umowiona",
+      "opis": "Ponowna rewizja ",
+      "data": "11.06.2026 godz. 10:00",
+      "id": "kNAKD0LlNo4"
+    },
+    {
+      "mrn": "PL4430200004R0",
+      "status": "umowiona",
+      "opis": "Badanie dokumentów",
+      "data": "18-06-2026",
+      "id": "PTGb3EgN9ww"
+    }
+  ],
+  "Platnosci": [
+    {
+      "id": "1",
+      "tytul": "Mandat za wyjecie paczki spod dozoru celnego",
+      "naleznosc": "300.00",
+      "status": "oplacona"
+    },
+    {
+      "id": "2",
+      "tytul": "Oplata za asyste magazyniera",
+      "naleznosc": "70.00",
+      "status": "nieplacona"
+    },
+    {
+      "id": "3",
+      "tytul": "Mandat za blad w deklaracji celnej",
+      "naleznosc": "500.00",
+      "status": "nieoplacona"
+    }
+  ],
+  "Towary": [
+    {
+      "id": "PL-00001",
+      "numer AWB": "157-4501",
+      "opis": "Ubrania",
+      "waga": "2500kg",
+      "status": "odprawiony"
+    },
+    {
+      "id": "PL-00002",
+      "numer AWB": "157-4502",
+      "opis": "Elektronika",
+      "waga": "1500kg",
+      "status": "zatrzymany do rewizji"
+    },
+    {
+      "id": "PL-00003",
+      "numer AWB": "157-4503",
+      "opis": "Artykuły dowmowe",
+      "waga": "300kg",
+      "status": "w trakcie skanowania"
+    }
+  ],
+  "Powiadomienia": [
+    {
+      "id": "1",
+      "tresc": "Przesylka PL-00001 zostala zwolniona i jest gotowa do wywozu",
+      "data": "2026-05-24",
+      "godzina": "15:30"
+    },
+    {
+      "id": "2",
+      "tresc": "Nalozono oplate za asyste magazyniera w wysokosci 70.00",
+      "data": "2026-05-25",
+      "godzina": "12:00"
+    },
+    {
+      "id": "3",
+      "tresc": "Nalozno mandat za bledy w deklaracji celnej",
+      "data": "2026-05-25",
+      "godzina": "18:42"
+    }
+  ],
+  "Profil": {
+    "nazwa agencji": "Customs and Clereance Sp. z o.o.",
+    "EORI": "PL12345678900000",
+    "numer licencji": "AG-9988-PL",
+    "kontakt oddzialu": "Oddzial celny I w Warszawie, tel: +48 22 123 45 67"
+  },
+  "$schema": "./node_modules/json-server/schema.json"
 }

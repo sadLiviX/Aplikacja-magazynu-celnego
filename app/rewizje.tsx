@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, StyleSheet, Text, View } from 'react-native';
 import { API_URL } from '../constants/Config';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { router } from 'expo-router';
 
 export default function RevisionScreen() {
   const [data, setData] = useState<any[]>([]);
@@ -49,6 +51,7 @@ const getStatusStyle = (status: string): any => {
 };
 
 return(
+  <>
 <FlatList
   data={data}
   keyExtractor={(item) => item.id}
@@ -62,6 +65,17 @@ return(
   )}
 />
 
+  <TouchableOpacity style={{
+    backgroundColor: '#0052cc',
+    padding: 12,
+    margin: 10,
+    borderRadius: 8,
+    alignItems: 'center'
+  }}
+  onPress={() => router.push('/umawianie')}>
+    <Text style={{color: '#fff', fontWeight: 'bold'}}> Umów nowa rewizję </Text>
+</TouchableOpacity>
+</>
 );
 
 }
