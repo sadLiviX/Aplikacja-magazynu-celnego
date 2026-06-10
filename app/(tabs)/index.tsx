@@ -52,6 +52,12 @@ export default function DashboardScreen() {
   style={styles.boxRevisions} 
   onPress={() => router.push('/rewizje')}
 >
+  <TouchableOpacity 
+  style={styles.notificationButton} 
+  onPress={() => router.push('/powiadomienia')}
+>
+  <Text style={styles.notificationButtonText}>🔔 Otwórz Centrum Powiadomień</Text>
+</TouchableOpacity>
   <Text> Aktywne rewizje: {data.aktywneRewizje}</Text>
 </TouchableOpacity>
 
@@ -116,6 +122,23 @@ const styles = StyleSheet.create({
   alertBox: {
     backgroundColor: 'red'
   },
+  notificationButton: {
+  backgroundColor: '#fff',
+  padding: 15,
+  borderRadius: 10,
+  marginTop: 15,
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  borderWidth: 1,
+  borderColor: '#e2e8f0',
+  elevation: 1,
+},
+notificationButtonText: {
+  color: '#4a5568',
+  fontWeight: '600',
+  fontSize: 16,
+},
   alertText: {
     color: 'white',
     fontWeight: 'bold',

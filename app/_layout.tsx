@@ -9,6 +9,7 @@ export default function RootLayout() {
         <Stack.Screen name="rewizje" options={{ title: 'Lista rewizji' }} />
         <Stack.Screen name="formularz" options={{ title: 'Umawianie kontroli' }} />
         <Stack.Screen name="towar/[id]" options={{ title: 'Karta przesyłki' }} />
+        <Stack.Screen name="powiadomienia" options={{ title: 'Centrum Powiadomień' }} />
       </Stack>
     </GestureHandlerRootView>
   );
