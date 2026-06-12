@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0298841-ca60-4703-a2ad-55ff92170d82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/powiadomienia.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/magazyn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/magazyn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/platnosci.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/platnosci.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rewizje.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/rewizje.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/umawianie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/umawianie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/Config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/Config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hooks/useNotifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/useNotifications.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/profil.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profil.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "poprawki",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/Adrian/apki/Aplikacja-magazynu-celnego/app",
@@ -82,6 +69,7 @@
       <workItem from="1781110931789" duration="6277000" />
       <workItem from="1781188979876" duration="1225000" />
       <workItem from="1781190232725" duration="338000" />
+      <workItem from="1781276118620" duration="416000" />
     </task>
     <servers />
   </component>

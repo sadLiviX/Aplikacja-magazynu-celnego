@@ -1,31 +1,28 @@
-import { StyleSheet } from 'react-native';
+import { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { API_URL } from '../../constants/Config';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+export default function ProfilScreen() {
+  const [profil, setProfil] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
 
-export default function TabTwoScreen() {
+  if (loading) {
+    return (
+        <View style={styles.center}>
+          <ActivityIndicator size="large" color="#0052cc" />
+        </View>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Profil - info o agencji i agencie</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/profil.tsx" />
-    </View>
+      <View style={styles.container}>
+        <Text>Ekran Profilu Agencji</Text>
+      </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
+  container: { flex: 1, backgroundColor: '#f7fafc', padding: 20 },
+  center: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#f7fafc' },
 });
