@@ -1,3 +1,4 @@
+// Podmień zawartość pliku na:
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -30,14 +31,23 @@ export default function ProfilScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 16, textAlign: 'center', marginTop: 20 }}>
-                Połączono z bazą danych agencji.
-            </Text>
+            {/* SEKCJA PAPORTU / HEADER */}
+            <View style={styles.headerCard}>
+                <View style={styles.avatarCircle}>
+                    <Ionicons name="business" size={40} color="#fff" />
+                </View>
+                <Text style={styles.agencyName}>{profil["nazwa agencji"]}</Text>
+                <Text style={styles.subBadge}>Koncesjonowana Agencja Celna</Text>
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, backgroundColor: '#f7fafc', padding: 20 },
+    container: { flex: 1, backgroundColor: '#f7fafc', padding: 20, alignItems: 'center' },
     center: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#f7fafc' },
+    headerCard: { alignItems: 'center', marginTop: 10, marginBottom: 20 },
+    avatarCircle: { width: 80, height: 80, borderRadius: 40, backgroundColor: '#0052cc', justifyContent: 'center', alignItems: 'center', elevation: 3, marginBottom: 12 },
+    agencyName: { fontSize: 20, fontWeight: 'bold', color: '#1a202c', textAlign: 'center', paddingHorizontal: 10 },
+    subBadge: { fontSize: 12, color: '#4a5568', fontWeight: '500', marginTop: 4, backgroundColor: '#edf2f7', paddingVertical: 4, paddingHorizontal: 10, borderRadius: 20 },
 });
