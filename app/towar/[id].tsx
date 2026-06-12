@@ -4,14 +4,12 @@ import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { API_URL } from '../../constants/Config';
 
 export default function SzczegolyTowaruScreen() {
-  // Wyciągamy dynamiczne id z adresu aplikacji
   const { id } = useLocalSearchParams();
   
   const [towar, setTowar] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Strzelamy do API po konkretny towar, np. /Towary/PL-12345
     fetch(`${API_URL}/Towary/${id}`)
       .then((response) => response.json())
       .then((json) => {
@@ -22,7 +20,7 @@ export default function SzczegolyTowaruScreen() {
         console.error(err);
         setLoading(false);
       });
-  }, [id]); // useEffect odpali się ponownie, jeśli id się zmieni
+  }, [id]);
 
   if (loading) {
     return (

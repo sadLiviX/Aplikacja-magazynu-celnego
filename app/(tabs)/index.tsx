@@ -42,7 +42,7 @@ export default function DashboardScreen() {
       <View style={styles.statsGrid}>
         <View style={styles.statCard}>
           <Ionicons name="cube-outline" size={24} color="#0052cc" />
-          <Text style={styles.statValue}>{data.paczkiWMagazynie}</Text>
+          <Text style={styles.statValue}>{data.towar}</Text>
           <Text style={styles.statLabel}>W magazynie</Text>
         </View>
 

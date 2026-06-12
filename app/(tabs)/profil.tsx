@@ -1,4 +1,3 @@
-// Podmień kod na ostateczną i kompletną wersję pliku:
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';

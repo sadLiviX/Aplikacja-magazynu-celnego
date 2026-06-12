@@ -1,6 +1,5 @@
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-// Importujemy hook do obsługi bezpiecznych stref telefonu
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function TabsLayout() {
@@ -15,9 +14,7 @@ export default function TabsLayout() {
           backgroundColor: '#ffffff',
           borderTopWidth: 1,
           borderTopColor: '#e2e8f0',
-          // DYNAMICZNA WYSOKOŚĆ: 65px bazowo + margines na przyciski systemowe telefonu
           height: 65 + Math.max(insets.bottom, 8),
-          // DYNAMICZNY DOŁNY MARGINES: chroni tekst przed przyciskami Androida
           paddingBottom: Math.max(insets.bottom, 12),
           paddingTop: 8,
         },
