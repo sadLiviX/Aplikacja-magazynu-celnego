@@ -1,4 +1,4 @@
-// Podmień zawartość pliku na:
+// Podmień zawartość pliku na pełny interfejs z polami danych:
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, Alert, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -31,13 +31,32 @@ export default function ProfilScreen() {
 
     return (
         <View style={styles.container}>
-            {/* SEKCJA PAPORTU / HEADER */}
             <View style={styles.headerCard}>
                 <View style={styles.avatarCircle}>
                     <Ionicons name="business" size={40} color="#fff" />
                 </View>
                 <Text style={styles.agencyName}>{profil["nazwa agencji"]}</Text>
                 <Text style={styles.subBadge}>Koncesjonowana Agencja Celna</Text>
+            </View>
+
+            {/* KARTA ZE SZCZEGÓŁOWYMI DANYMI Z DB.JSON */}
+            <View style={styles.infoCard}>
+                <Text style={styles.sectionTitle}>PARAMETRY REJESTROWE</Text>
+
+                <View style={styles.infoRow}>
+                    <Text style={styles.label}>Identyfikator EORI</Text>
+                    <Text style={styles.value}>{profil["EORI"]}</Text>
+                </View>
+
+                <View style={styles.infoRow}>
+                    <Text style={styles.label}>Numer Licencji MF</Text>
+                    <Text style={styles.value}>{profil["numer licencji"]}</Text>
+                </View>
+
+                <View style={styles.infoRow}>
+                    <Text style={styles.label}>Właściwy Urząd i Kontakt</Text>
+                    <Text style={styles.value}>{profil["kontakt oddzialu"]}</Text>
+                </View>
             </View>
         </View>
     );
@@ -50,4 +69,9 @@ const styles = StyleSheet.create({
     avatarCircle: { width: 80, height: 80, borderRadius: 40, backgroundColor: '#0052cc', justifyContent: 'center', alignItems: 'center', elevation: 3, marginBottom: 12 },
     agencyName: { fontSize: 20, fontWeight: 'bold', color: '#1a202c', textAlign: 'center', paddingHorizontal: 10 },
     subBadge: { fontSize: 12, color: '#4a5568', fontWeight: '500', marginTop: 4, backgroundColor: '#edf2f7', paddingVertical: 4, paddingHorizontal: 10, borderRadius: 20 },
+    infoCard: { backgroundColor: '#fff', width: '100%', borderRadius: 12, padding: 16, borderWidth: 1, borderColor: '#edf2f7', elevation: 2 },
+    sectionTitle: { fontSize: 11, fontWeight: 'bold', color: '#718096', letterSpacing: 1, marginBottom: 10 },
+    infoRow: { borderBottomWidth: 1, borderBottomColor: '#f7fafc', paddingVertical: 12 },
+    label: { fontSize: 12, color: '#a0aec0', marginBottom: 2 },
+    value: { fontSize: 14, color: '#2d3748', fontWeight: '500' },
 });
